@@ -8,7 +8,7 @@
   --animate-slide-left: slide-left 0.7s ease-out forwards;
   --animate-slide-right: slide-right 0.7s ease-out forwards;
   --animate-fade-in: fade-in 0.6s ease-out forwards;
-  --animate-counter: counter 2s ease-out forwards;
+  
 
   @keyframes float {
     0%, 100% { transform: translateY(0px) rotate(0deg); }
