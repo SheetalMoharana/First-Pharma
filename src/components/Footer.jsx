@@ -13,14 +13,19 @@ const links = {
     { label: 'Blog', to: '/blog' },
     { label: 'Careers', to: '/about' },
     { label: 'Contact', to: '/contact' },
-    { label: 'Press Kit', to: '/about' },
   ],
   Support: [
     { label: 'Help Center', to: '/contact' },
     { label: 'Track Order', to: '/shop' },
-    { label: 'Returns & Refunds', to: '/contact' },
     { label: 'Shipping Info', to: '/contact' },
     { label: 'Warranty', to: '/contact' },
+  ],
+  Quicklink: [
+    { label: 'FAQ', to: '/faq' },
+    { label: 'Terms & Conditions', to: '/terms' },
+    { label: 'Privacy Policy', to: '/privacy' },
+    { label: 'Refund Terms', to: '/refund' },
+    
   ],
 }
 
@@ -28,7 +33,7 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-400">
       <div className="max-w-7xl mx-auto px-4 py-14">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-10">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-6 gap-8">
           {/* Brand column */}
           <div className="lg:col-span-2 space-y-5">
             <Link to="/" className="flex items-center gap-2">
@@ -105,11 +110,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 pt-6 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs">
           <p>© {new Date().getFullYear()} FirstPharma. All rights reserved.</p>
-          <div className="flex gap-4">
-            {['Privacy Policy', 'Terms of Service', 'Cookie Policy'].map((t) => (
-              <Link key={t} to="/" className="hover:text-cyan-400 transition-colors duration-200">{t}</Link>
-            ))}
-          </div>
+          
         </div>
       </div>
     </footer>

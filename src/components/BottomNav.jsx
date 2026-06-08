@@ -51,8 +51,8 @@ const tabs = [
 
 export default function BottomNav() {
   return (
-    <nav className="md:hidden fixed bottom-4 left-1/2 -translate-x-1/2 z-50">
-      <div className="flex items-center gap-1 bg-white/95 backdrop-blur-md shadow-xl shadow-slate-200/80 border border-slate-100 rounded-2xl px-2 py-2">
+    <nav className="md:hidden fixed bottom-3 left-1/2 -translate-x-1/2 z-50">
+      <div className="flex items-center gap-3 bg-white/95 backdrop-blur-md shadow-xl shadow-slate-200/80 border border-slate-100 rounded-2xl px-4 py-2">
         {tabs.map(({ to, label, icon, badge }) => (
           <NavLink
             key={to}

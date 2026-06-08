@@ -3,6 +3,8 @@ import { useEffect } from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import BottomNav from '../components/BottomNav'
+import FirstChatAi from '../components/FirstChatAi'
+
 
 export default function MainLayout() {
   const { pathname } = useLocation()
@@ -17,6 +19,7 @@ export default function MainLayout() {
       <main className="flex-1 pb-20 md:pb-0">
         <Outlet />
       </main>
+      <FirstChatAi/>
       <Footer />
       <BottomNav />
     </div>
