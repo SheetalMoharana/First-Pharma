@@ -20,7 +20,7 @@ const links = {
     { label: 'Shipping Info', to: '/contact' },
     { label: 'Warranty', to: '/contact' },
   ],
-  Quicklink: [
+  QuickLink: [
     { label: 'FAQ', to: '/faq' },
     { label: 'Terms & Conditions', to: '/terms' },
     { label: 'Privacy Policy', to: '/privacy' },
